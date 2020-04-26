@@ -1,11 +1,19 @@
-Cmp-Mod V01 Created by PcbNew   date = Sun 26 Apr 2020 12:47:48 AM PDT
+Cmp-Mod V01 Created by PcbNew   date = Sun 26 Apr 2020 01:46:16 PM PDT
 
 BeginCmp
-TimeStamp = 5EA64CE7
-Path = /5EAA4D80
-Reference = J3;
-ValeurCmp = PROTO_PWR;
-IdModule  = hardware-sch-blocks:PROTO_2x6;
+TimeStamp = 5EA633BB
+Path = /5EB2B86C
+Reference = J4;
+ValeurCmp = UART_DEBUG;
+IdModule  = hardware-sch-blocks:TSM-103-01-L-SV;
+EndCmp
+
+BeginCmp
+TimeStamp = 5EA635EB
+Path = /5EA23550
+Reference = J5;
+ValeurCmp = Conn_ARM_JTAG_SWD_10;
+IdModule  = hardware-sch-blocks:FTSH-105-01-L-DV-K;
 EndCmp
 
 BeginCmp
@@ -13,6 +21,14 @@ TimeStamp = 5EA592BA
 Path = /5EAA4304
 Reference = Jd;
 ValeurCmp = PROTO_IO;
+IdModule  = hardware-sch-blocks:PROTO_2x6;
+EndCmp
+
+BeginCmp
+TimeStamp = 5EA64CE7
+Path = /5EAA4D80
+Reference = J3;
+ValeurCmp = PROTO_PWR;
 IdModule  = hardware-sch-blocks:PROTO_2x6;
 EndCmp
 
@@ -62,14 +78,6 @@ Path = /5EAF5044
 Reference = H1;
 ValeurCmp = MountingHole;
 IdModule  = MountingHole:MountingHole_3mm;
-EndCmp
-
-BeginCmp
-TimeStamp = 5EA635EB
-Path = /5EA23550
-Reference = J5;
-ValeurCmp = Conn_ARM_JTAG_SWD_10;
-IdModule  = hardware-sch-blocks:FTSH-105-01-L-DV-K;
 EndCmp
 
 BeginCmp
@@ -198,14 +206,6 @@ Path = /5EAAA17C
 Reference = JP2;
 ValeurCmp = Loopback Jumper;
 IdModule  = Jumper:SolderJumper-3_P1.3mm_Bridged2Bar12_Pad1.0x1.5mm;
-EndCmp
-
-BeginCmp
-TimeStamp = 5EA633BB
-Path = /5EB2B86C
-Reference = J4;
-ValeurCmp = UART_DEBUG;
-IdModule  = hardware-sch-blocks:TSM-103-01-L-SV;
 EndCmp
 
 BeginCmp
