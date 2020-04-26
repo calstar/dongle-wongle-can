@@ -1166,11 +1166,9 @@ Wire Notes Line
 	6750 6350 8850 6350
 Text Notes 6350 3050 0    50   ~ 0
 POWER
-Wire Wire Line
-	6800 4750 7100 4750
 $Comp
-L star-sch-block-symbols:AP1509-33 U?
-U 1 1 5F0A0CB9
+L hardware-sch-blocks:AP1509-33 U?
+U 1 1 5EA62ACD
 P 7300 4300
 F 0 "U?" H 7744 4271 50  0000 L CNN
 F 1 "AP1509-33" H 7744 4180 50  0000 L CNN
@@ -1180,18 +1178,20 @@ F 3 "https://www.diodes.com/assets/Datasheets/AP1509.pdf" H 7350 4650 50  0001 C
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
+	6800 4750 7100 4750
+Wire Wire Line
 	7500 4750 7800 4750
-Wire Wire Line
-	7500 4750 7400 4750
-Connection ~ 7500 4750
-Wire Wire Line
-	7400 4750 7300 4750
-Connection ~ 7400 4750
 Wire Wire Line
 	7100 4750 7200 4750
 Connection ~ 7100 4750
-Connection ~ 7200 4750
 Wire Wire Line
 	7200 4750 7300 4750
+Connection ~ 7200 4750
+Wire Wire Line
+	7300 4750 7400 4750
 Connection ~ 7300 4750
+Wire Wire Line
+	7400 4750 7500 4750
+Connection ~ 7400 4750
+Connection ~ 7500 4750
 $EndSCHEMATC

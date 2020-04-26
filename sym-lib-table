@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name hardware-sch-blocks)(type Legacy)(uri ${KIPRJMOD}/hardware-sch-blocks/star-common-lib.lib)(options "")(descr ""))
+)
