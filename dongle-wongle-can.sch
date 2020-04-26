@@ -30,7 +30,7 @@ U 1 1 5EA23550
 P 6000 6150
 F 0 "J5" H 5700 6700 50  0000 R CNN
 F 1 "Conn_ARM_JTAG_SWD_10" V 5550 6600 50  0000 R CNN
-F 2 "hardware-sch-blocks:FTMH-120-03-F-DV-P" H 6000 6150 50  0001 C CNN
+F 2 "hardware-sch-blocks:FTSH-105-01-L-DV-K" H 6000 6150 50  0001 C CNN
 F 3 "http://infocenter.arm.com/help/topic/com.arm.doc.ddi0314h/DDI0314H_coresight_components_trm.pdf" V 5650 4900 50  0001 C CNN
 	1    6000 6150
 	1    0    0    -1  
@@ -302,8 +302,6 @@ Text GLabel 1600 4250 2    50   Input ~ 0
 CANH
 Text GLabel 1600 4550 2    50   Input ~ 0
 CANL
-Wire Wire Line
-	1100 4600 1100 4550
 Wire Wire Line
 	1100 4300 1100 4250
 Text GLabel 3350 3700 0    50   Input ~ 0
@@ -651,38 +649,12 @@ Wire Wire Line
 	7450 3650 7450 3700
 Wire Wire Line
 	7450 3700 7600 3700
-$Comp
-L Connector:TestPoint TP1
-U 1 1 5EB87845
-P 1100 4200
-F 0 "TP1" H 1158 4318 50  0000 L CNN
-F 1 "CANH_TP" H 1158 4227 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Keystone_5005-5009_Compact" H 1300 4200 50  0001 C CNN
-F 3 "~" H 1300 4200 50  0001 C CNN
-	1    1100 4200
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:TestPoint TP2
-U 1 1 5EB8AE14
-P 1100 4600
-F 0 "TP2" H 1042 4626 50  0000 R CNN
-F 1 "CANL_TP" H 1042 4717 50  0000 R CNN
-F 2 "TestPoint:TestPoint_Keystone_5005-5009_Compact" H 1300 4600 50  0001 C CNN
-F 3 "~" H 1300 4600 50  0001 C CNN
-	1    1100 4600
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	1100 4550 1600 4550
-Connection ~ 1100 4550
 Wire Wire Line
 	1100 4550 1100 4500
 Wire Wire Line
 	1600 4250 1100 4250
-Connection ~ 1100 4250
-Wire Wire Line
-	1100 4250 1100 4200
 $Comp
 L Device:C_Small C2
 U 1 1 5EBC86C4
@@ -875,36 +847,10 @@ F 3 "~" H 1100 7300 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	1200 7300 1350 7300
-Wire Wire Line
 	1000 7300 900  7300
-Wire Wire Line
-	1650 7300 1750 7300
 Wire Wire Line
 	1750 7300 1750 7050
 Connection ~ 1750 7050
-$Comp
-L Jumper:SolderJumper_2_Open JP1
-U 1 1 5EC6FD0B
-P 1500 7300
-F 0 "JP1" H 1500 7200 50  0000 C CNN
-F 1 "BOOT_JUMP" H 1500 7414 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 1500 7300 50  0001 C CNN
-F 3 "~" H 1500 7300 50  0001 C CNN
-	1    1500 7300
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_02x06_Counter_Clockwise J3
-U 1 1 5ECB63F8
-P 3550 2050
-F 0 "J3" H 3600 2467 50  0000 C CNN
-F 1 "PROTO_POWER" H 3600 2376 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x12_P2.54mm_Vertical" H 3550 2050 50  0001 C CNN
-F 3 "~" H 3550 2050 50  0001 C CNN
-	1    3550 2050
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:GND #PWR0125
 U 1 1 5ECB81DF
@@ -989,17 +935,6 @@ Text GLabel 2650 2350 2    50   Input ~ 0
 SWDIO
 Text GLabel 1300 2350 0    50   Input ~ 0
 SWDCLK
-$Comp
-L Connector_Generic:Conn_02x06_Counter_Clockwise J2
-U 1 1 5ECFB1DE
-P 2200 2050
-F 0 "J2" H 2250 2467 50  0000 C CNN
-F 1 "PROTO_IO" H 2250 2376 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x12_P2.54mm_Vertical" H 2200 2050 50  0001 C CNN
-F 3 "~" H 2200 2050 50  0001 C CNN
-	1    2200 2050
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2650 2350 2500 2350
 Wire Wire Line
@@ -1012,12 +947,6 @@ Wire Wire Line
 	1450 2350 1300 2350
 Wire Notes Line
 	750  2700 750  1550
-Wire Notes Line
-	750  1550 4150 1550
-Wire Notes Line
-	4150 1550 4150 2700
-Wire Notes Line
-	4150 2700 750  2700
 Text Notes 800  1700 0    100  ~ 0
 PROTO AREA\n
 Wire Wire Line
@@ -1201,4 +1130,138 @@ Wire Wire Line
 Wire Wire Line
 	8350 4750 7800 4750
 Connection ~ 7800 4750
+$Comp
+L Connector_Generic:Conn_02x06_Odd_Even J2
+U 1 1 5EAA4304
+P 2200 2050
+F 0 "J2" H 2250 2467 50  0000 C CNN
+F 1 "PROTO_IO" H 2250 2376 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x06_P2.54mm_Vertical" H 2200 2050 50  0001 C CNN
+F 3 "~" H 2200 2050 50  0001 C CNN
+	1    2200 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x06_Odd_Even J3
+U 1 1 5EAA4D80
+P 3550 2050
+F 0 "J3" H 3600 2467 50  0000 C CNN
+F 1 "PROTO_PWR" H 3600 2376 50  0000 C CNN
+F 2 "hardware-sch-blocks:PROTO_2x6" H 3550 2050 50  0001 C CNN
+F 3 "~" H 3550 2050 50  0001 C CNN
+	1    3550 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0129
+U 1 1 5EAEA6ED
+P 8600 4750
+F 0 "#PWR0129" H 8600 4500 50  0001 C CNN
+F 1 "GND" H 8750 4750 50  0000 C CNN
+F 2 "" H 8600 4750 50  0001 C CNN
+F 3 "" H 8600 4750 50  0001 C CNN
+	1    8600 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8600 4750 8350 4750
+Connection ~ 8350 4750
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5EAF5044
+P 6450 3250
+F 0 "H1" H 6550 3296 50  0000 L CNN
+F 1 "MountingHole" H 6550 3205 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3mm" H 6450 3250 50  0001 C CNN
+F 3 "~" H 6450 3250 50  0001 C CNN
+	1    6450 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 5EAF76F6
+P 6450 3450
+F 0 "H2" H 6550 3496 50  0000 L CNN
+F 1 "MountingHole" H 6550 3405 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3mm" H 6450 3450 50  0001 C CNN
+F 3 "~" H 6450 3450 50  0001 C CNN
+	1    6450 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 5EAF7A66
+P 6450 3650
+F 0 "H3" H 6550 3696 50  0000 L CNN
+F 1 "MountingHole" H 6550 3605 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3mm" H 6450 3650 50  0001 C CNN
+F 3 "~" H 6450 3650 50  0001 C CNN
+	1    6450 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 5EAF7F60
+P 6450 3850
+F 0 "H4" H 6550 3896 50  0000 L CNN
+F 1 "MountingHole" H 6550 3805 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3mm" H 6450 3850 50  0001 C CNN
+F 3 "~" H 6450 3850 50  0001 C CNN
+	1    6450 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1200 7300 1750 7300
+$Comp
+L Connector_Generic:Conn_02x06_Odd_Even J6
+U 1 1 5EB575D3
+P 4500 2050
+F 0 "J6" H 4550 2467 50  0000 C CNN
+F 1 "PROTO1" H 4550 2376 50  0000 C CNN
+F 2 "hardware-sch-blocks:PROTO_2x6" H 4500 2050 50  0001 C CNN
+F 3 "~" H 4500 2050 50  0001 C CNN
+	1    4500 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x06_Odd_Even J7
+U 1 1 5EB5846C
+P 5350 2050
+F 0 "J7" H 5400 2467 50  0000 C CNN
+F 1 "PROTO2" H 5400 2376 50  0000 C CNN
+F 2 "hardware-sch-blocks:PROTO_2x6" H 5350 2050 50  0001 C CNN
+F 3 "~" H 5350 2050 50  0001 C CNN
+	1    5350 2050
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4300 1850
+NoConn ~ 4300 1950
+NoConn ~ 4300 2050
+NoConn ~ 4300 2150
+NoConn ~ 4300 2250
+NoConn ~ 4300 2350
+NoConn ~ 4800 2350
+NoConn ~ 4800 2250
+NoConn ~ 4800 2150
+NoConn ~ 4800 2050
+NoConn ~ 4800 1950
+NoConn ~ 4800 1850
+NoConn ~ 5150 1850
+NoConn ~ 5150 1950
+NoConn ~ 5150 2050
+NoConn ~ 5150 2150
+NoConn ~ 5150 2250
+NoConn ~ 5150 2350
+NoConn ~ 5650 2350
+NoConn ~ 5650 2250
+NoConn ~ 5650 2150
+NoConn ~ 5650 2050
+NoConn ~ 5650 1950
+NoConn ~ 5650 1850
+Wire Notes Line
+	6050 2700 6050 1550
+Wire Notes Line
+	750  1550 6050 1550
+Wire Notes Line
+	750  2700 6050 2700
 $EndSCHEMATC

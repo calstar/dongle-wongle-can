@@ -1,0 +1,291 @@
+Cmp-Mod V01 Created by PcbNew   date = Sun 26 Apr 2020 12:47:48 AM PDT
+
+BeginCmp
+TimeStamp = 5EA64CE7
+Path = /5EAA4D80
+Reference = J3;
+ValeurCmp = PROTO_PWR;
+IdModule  = hardware-sch-blocks:PROTO_2x6;
+EndCmp
+
+BeginCmp
+TimeStamp = 5EA592BA
+Path = /5EAA4304
+Reference = Jd;
+ValeurCmp = PROTO_IO;
+IdModule  = hardware-sch-blocks:PROTO_2x6;
+EndCmp
+
+BeginCmp
+TimeStamp = 5EA66521
+Path = /5EB575D3
+Reference = J6;
+ValeurCmp = PROTO1;
+IdModule  = hardware-sch-blocks:PROTO_2x6;
+EndCmp
+
+BeginCmp
+TimeStamp = 5EA66543
+Path = /5EB5846C
+Reference = J7;
+ValeurCmp = PROTO2;
+IdModule  = hardware-sch-blocks:PROTO_2x6;
+EndCmp
+
+BeginCmp
+TimeStamp = 5EA5CD28
+Path = /5EAF7F60
+Reference = H4;
+ValeurCmp = MountingHole;
+IdModule  = MountingHole:MountingHole_3mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 5EA5CD20
+Path = /5EAF7A66
+Reference = H3;
+ValeurCmp = MountingHole;
+IdModule  = MountingHole:MountingHole_3mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 5EA61170
+Path = /5EAF76F6
+Reference = H2;
+ValeurCmp = MountingHole;
+IdModule  = MountingHole:MountingHole_3mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 5EA6154E
+Path = /5EAF5044
+Reference = H1;
+ValeurCmp = MountingHole;
+IdModule  = MountingHole:MountingHole_3mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 5EA635EB
+Path = /5EA23550
+Reference = J5;
+ValeurCmp = Conn_ARM_JTAG_SWD_10;
+IdModule  = hardware-sch-blocks:FTSH-105-01-L-DV-K;
+EndCmp
+
+BeginCmp
+TimeStamp = 5EA63316
+Path = /5EA62ACD
+Reference = U3;
+ValeurCmp = AP1509-33;
+IdModule  = Package_SO:SOIC-8_3.9x4.9mm_P1.27mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 5EA633E8
+Path = /5EA595AB
+Reference = U2;
+ValeurCmp = SN65HVD233;
+IdModule  = Package_SO:SOIC-8_3.9x4.9mm_P1.27mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 5EA63C51
+Path = /5EA22FA9
+Reference = U1;
+ValeurCmp = STM32F042F6Px;
+IdModule  = Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 5EA631FA
+Path = /5EA3084D
+Reference = SW1;
+ValeurCmp = SW_Push;
+IdModule  = Button_Switch_SMD:SW_SPST_CK_RS282G05A3;
+EndCmp
+
+BeginCmp
+TimeStamp = 5EA63240
+Path = /5EAFED5B
+Reference = RN2;
+ValeurCmp = 200;
+IdModule  = Resistor_SMD:R_Array_Concave_2x0603;
+EndCmp
+
+BeginCmp
+TimeStamp = 5EA63154
+Path = /5EB144D8
+Reference = RN1;
+ValeurCmp = 0;
+IdModule  = Resistor_SMD:R_Array_Concave_4x0603;
+EndCmp
+
+BeginCmp
+TimeStamp = 5EA6342A
+Path = /5EA2F18E
+Reference = R6;
+ValeurCmp = 1K;
+IdModule  = Resistor_SMD:R_0603_1608Metric;
+EndCmp
+
+BeginCmp
+TimeStamp = 5EA6365E
+Path = /5EB6A610
+Reference = R5;
+ValeurCmp = 1k;
+IdModule  = Resistor_SMD:R_0603_1608Metric;
+EndCmp
+
+BeginCmp
+TimeStamp = 5EA6345A
+Path = /5EA6B454
+Reference = R4;
+ValeurCmp = 10k;
+IdModule  = Resistor_SMD:R_0603_1608Metric;
+EndCmp
+
+BeginCmp
+TimeStamp = 5EA6348A
+Path = /5EAB0969
+Reference = R3;
+ValeurCmp = 1k;
+IdModule  = Resistor_SMD:R_0603_1608Metric;
+EndCmp
+
+BeginCmp
+TimeStamp = 5EA63CA7
+Path = /5EC71062
+Reference = R2;
+ValeurCmp = DNP;
+IdModule  = Resistor_SMD:R_0603_1608Metric;
+EndCmp
+
+BeginCmp
+TimeStamp = 5EA63586
+Path = /5EA66721
+Reference = R1;
+ValeurCmp = DNP;
+IdModule  = Resistor_SMD:R_0603_1608Metric;
+EndCmp
+
+BeginCmp
+TimeStamp = 5EA63526
+Path = /5EF77160
+Reference = L1;
+ValeurCmp = 47u;
+IdModule  = Inductor_SMD:L_0603_1608Metric;
+EndCmp
+
+BeginCmp
+TimeStamp = 5EA63628
+Path = /5EA888F6
+Reference = JP4;
+ValeurCmp = Slew Jumper 2;
+IdModule  = Jumper:SolderJumper-3_P1.3mm_Bridged2Bar12_Pad1.0x1.5mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 5EA636C1
+Path = /5EA88120
+Reference = JP3;
+ValeurCmp = Slew Jumper 1;
+IdModule  = Jumper:SolderJumper-3_P1.3mm_Bridged2Bar12_Pad1.0x1.5mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 5EA632D7
+Path = /5EAAA17C
+Reference = JP2;
+ValeurCmp = Loopback Jumper;
+IdModule  = Jumper:SolderJumper-3_P1.3mm_Bridged2Bar12_Pad1.0x1.5mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 5EA633BB
+Path = /5EB2B86C
+Reference = J4;
+ValeurCmp = UART_DEBUG;
+IdModule  = hardware-sch-blocks:TSM-103-01-L-SV;
+EndCmp
+
+BeginCmp
+TimeStamp = 5EA6150B
+Path = /5EA4C40D
+Reference = J1;
+ValeurCmp = MicroLock;
+IdModule  = hardware-sch-blocks:505448-0871;
+EndCmp
+
+BeginCmp
+TimeStamp = 5EA634F2
+Path = /5EB6C3D4
+Reference = D2;
+ValeurCmp = LED_Small;
+IdModule  = LED_SMD:LED_0603_1608Metric_Castellated;
+EndCmp
+
+BeginCmp
+TimeStamp = 5EA634BC
+Path = /5EF87033
+Reference = D1;
+ValeurCmp = PROTEC;
+IdModule  = Diode_SMD:D_0603_1608Metric;
+EndCmp
+
+BeginCmp
+TimeStamp = 5EA6311E
+Path = /5EFBA513
+Reference = C7;
+ValeurCmp = 10u;
+IdModule  = Capacitor_SMD:C_0603_1608Metric;
+EndCmp
+
+BeginCmp
+TimeStamp = 5EA63274
+Path = /5EFBB885
+Reference = C6;
+ValeurCmp = 10u;
+IdModule  = Capacitor_SMD:C_0603_1608Metric;
+EndCmp
+
+BeginCmp
+TimeStamp = 5EA632A4
+Path = /5EA5EBBA
+Reference = C5;
+ValeurCmp = 4.7u;
+IdModule  = Capacitor_SMD:C_0603_1608Metric;
+EndCmp
+
+BeginCmp
+TimeStamp = 5EA63556
+Path = /5EBC926C
+Reference = C4;
+ValeurCmp = 4.7u;
+IdModule  = Capacitor_SMD:C_0603_1608Metric;
+EndCmp
+
+BeginCmp
+TimeStamp = 5EA63C0E
+Path = /5EBE9051
+Reference = C3;
+ValeurCmp = 1u;
+IdModule  = Capacitor_SMD:C_0603_1608Metric;
+EndCmp
+
+BeginCmp
+TimeStamp = 5EA631C0
+Path = /5EBC86C4
+Reference = C2;
+ValeurCmp = 100n;
+IdModule  = Capacitor_SMD:C_0603_1608Metric;
+EndCmp
+
+BeginCmp
+TimeStamp = 5EA63CD7
+Path = /5EBE904B
+Reference = C1;
+ValeurCmp = 10n;
+IdModule  = Capacitor_SMD:C_0603_1608Metric;
+EndCmp
+
+EndListe
