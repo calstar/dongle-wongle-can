@@ -1136,7 +1136,7 @@ U 1 1 5EAA4304
 P 2200 2050
 F 0 "J2" H 2250 2467 50  0000 C CNN
 F 1 "PROTO_IO" H 2250 2376 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x06_P2.54mm_Vertical" H 2200 2050 50  0001 C CNN
+F 2 "hardware-sch-blocks:PROTO_2x6" H 2200 2050 50  0001 C CNN
 F 3 "~" H 2200 2050 50  0001 C CNN
 	1    2200 2050
 	1    0    0    -1  
@@ -1264,4 +1264,15 @@ Wire Notes Line
 	750  1550 6050 1550
 Wire Notes Line
 	750  2700 6050 2700
+$Comp
+L Mechanical:MountingHole H5
+U 1 1 5EA863C0
+P 7350 3250
+F 0 "H5" H 7450 3296 50  0000 L CNN
+F 1 "Dummy Hole" H 7450 3205 50  0000 L CNN
+F 2 "hardware-sch-blocks:airbears" H 7350 3250 50  0001 C CNN
+F 3 "~" H 7350 3250 50  0001 C CNN
+	1    7350 3250
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

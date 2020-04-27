@@ -1,4 +1,28 @@
-Cmp-Mod V01 Created by PcbNew   date = Sun 26 Apr 2020 01:46:16 PM PDT
+Cmp-Mod V01 Created by PcbNew   date = Sun 26 Apr 2020 07:56:33 PM PDT
+
+BeginCmp
+TimeStamp = 5EA68152
+Path = /5EA863C0
+Reference = H5;
+ValeurCmp = Dummy Hole;
+IdModule  = hardware-sch-blocks:airbears;
+EndCmp
+
+BeginCmp
+TimeStamp = 5EA592BA
+Path = /5EAA4304
+Reference = J2;
+ValeurCmp = PROTO_IO;
+IdModule  = hardware-sch-blocks:PROTO_2x6;
+EndCmp
+
+BeginCmp
+TimeStamp = 5EA685F5
+Path = 
+Reference = G***;
+ValeurCmp = LOGO;
+IdModule  = hardware-sch-blocks:star;
+EndCmp
 
 BeginCmp
 TimeStamp = 5EA633BB
@@ -14,14 +38,6 @@ Path = /5EA23550
 Reference = J5;
 ValeurCmp = Conn_ARM_JTAG_SWD_10;
 IdModule  = hardware-sch-blocks:FTSH-105-01-L-DV-K;
-EndCmp
-
-BeginCmp
-TimeStamp = 5EA592BA
-Path = /5EAA4304
-Reference = Jd;
-ValeurCmp = PROTO_IO;
-IdModule  = hardware-sch-blocks:PROTO_2x6;
 EndCmp
 
 BeginCmp
