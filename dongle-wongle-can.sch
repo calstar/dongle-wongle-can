@@ -1384,4 +1384,36 @@ Wire Wire Line
 	2600 4500 2500 4500
 Wire Wire Line
 	2500 4300 2600 4300
+Text GLabel 5350 4450 0    50   Input ~ 0
+CAN_RX
+Text GLabel 5350 4350 0    50   Input ~ 0
+CAN_TX
+$Comp
+L Connector:TestPoint TP1
+U 1 1 5EBFFEC6
+P 5500 4350
+F 0 "TP1" H 5558 4468 50  0000 L CNN
+F 1 "TestPoint" H 5558 4377 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 5700 4350 50  0001 C CNN
+F 3 "~" H 5700 4350 50  0001 C CNN
+F 4 "true" H 5500 4350 50  0001 C CNN "DNP"
+	1    5500 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP2
+U 1 1 5EC002C9
+P 5500 4450
+F 0 "TP2" H 5442 4476 50  0000 R CNN
+F 1 "TestPoint" H 5442 4567 50  0000 R CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 5700 4450 50  0001 C CNN
+F 3 "~" H 5700 4450 50  0001 C CNN
+F 4 "true" H 5500 4450 50  0001 C CNN "DNP"
+	1    5500 4450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5350 4350 5500 4350
+Wire Wire Line
+	5500 4450 5350 4450
 $EndSCHEMATC
